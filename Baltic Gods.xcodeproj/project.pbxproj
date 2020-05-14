@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D18E55FA227BD21D00DC2F72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18E55F9227BD21D00DC2F72 /* AppDelegate.swift */; };
-		D18E55FC227BD21D00DC2F72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18E55FB227BD21D00DC2F72 /* ViewController.swift */; };
 		D18E55FF227BD21D00DC2F72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18E55FD227BD21D00DC2F72 /* Main.storyboard */; };
-		D18E5601227BD22200DC2F72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D18E5600227BD22200DC2F72 /* Assets.xcassets */; };
+		D18E5601227BD22200DC2F72 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D18E5600227BD22200DC2F72 /* assets.xcassets */; };
 		D18E5604227BD22200DC2F72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18E5602227BD22200DC2F72 /* LaunchScreen.storyboard */; };
 		D18E560F227BD22200DC2F72 /* Baltic_GodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18E560E227BD22200DC2F72 /* Baltic_GodsTests.swift */; };
 		D18E561A227BD22200DC2F72 /* Baltic_GodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18E5619227BD22200DC2F72 /* Baltic_GodsUITests.swift */; };
+		D1C25CE9227CA7F00042D150 /* GodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C25CE8227CA7F00042D150 /* GodsTableViewController.swift */; };
+		D1C25CEB227CB3F30042D150 /* BalticGods.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C25CEA227CB3F30042D150 /* BalticGods.swift */; };
+		D1C25CED227CB6270042D150 /* BalticGodsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C25CEC227CB6270042D150 /* BalticGodsData.swift */; };
+		D1C25CF0227CD04A0042D150 /* GodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C25CEF227CD04A0042D150 /* GodDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +39,8 @@
 /* Begin PBXFileReference section */
 		D18E55F6227BD21D00DC2F72 /* Baltic Gods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baltic Gods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D18E55F9227BD21D00DC2F72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D18E55FB227BD21D00DC2F72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D18E55FE227BD21D00DC2F72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D18E5600227BD22200DC2F72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D18E5600227BD22200DC2F72 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		D18E5603227BD22200DC2F72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D18E5605227BD22200DC2F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D18E560A227BD22200DC2F72 /* Baltic GodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Baltic GodsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +49,10 @@
 		D18E5615227BD22200DC2F72 /* Baltic GodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Baltic GodsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D18E5619227BD22200DC2F72 /* Baltic_GodsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baltic_GodsUITests.swift; sourceTree = "<group>"; };
 		D18E561B227BD22200DC2F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1C25CE8227CA7F00042D150 /* GodsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GodsTableViewController.swift; sourceTree = "<group>"; };
+		D1C25CEA227CB3F30042D150 /* BalticGods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalticGods.swift; sourceTree = "<group>"; };
+		D1C25CEC227CB6270042D150 /* BalticGodsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalticGodsData.swift; sourceTree = "<group>"; };
+		D1C25CEF227CD04A0042D150 /* GodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GodDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,16 @@
 		D18E55F8227BD21D00DC2F72 /* Baltic Gods */ = {
 			isa = PBXGroup;
 			children = (
+				D1C25CEE227CD0240042D150 /* New Group */,
 				D18E55F9227BD21D00DC2F72 /* AppDelegate.swift */,
-				D18E55FB227BD21D00DC2F72 /* ViewController.swift */,
 				D18E55FD227BD21D00DC2F72 /* Main.storyboard */,
-				D18E5600227BD22200DC2F72 /* Assets.xcassets */,
+				D18E5600227BD22200DC2F72 /* assets.xcassets */,
 				D18E5602227BD22200DC2F72 /* LaunchScreen.storyboard */,
 				D18E5605227BD22200DC2F72 /* Info.plist */,
+				D1C25CE8227CA7F00042D150 /* GodsTableViewController.swift */,
+				D1C25CEA227CB3F30042D150 /* BalticGods.swift */,
+				D1C25CEC227CB6270042D150 /* BalticGodsData.swift */,
+				D1C25CEF227CD04A0042D150 /* GodDetailViewController.swift */,
 			);
 			path = "Baltic Gods";
 			sourceTree = "<group>";
@@ -123,6 +133,13 @@
 				D18E561B227BD22200DC2F72 /* Info.plist */,
 			);
 			path = "Baltic GodsUITests";
+			sourceTree = "<group>";
+		};
+		D1C25CEE227CD0240042D150 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D18E5604227BD22200DC2F72 /* LaunchScreen.storyboard in Resources */,
-				D18E5601227BD22200DC2F72 /* Assets.xcassets in Resources */,
+				D18E5601227BD22200DC2F72 /* assets.xcassets in Resources */,
 				D18E55FF227BD21D00DC2F72 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D18E55FC227BD21D00DC2F72 /* ViewController.swift in Sources */,
+				D1C25CE9227CA7F00042D150 /* GodsTableViewController.swift in Sources */,
+				D1C25CED227CB6270042D150 /* BalticGodsData.swift in Sources */,
+				D1C25CEB227CB3F30042D150 /* BalticGods.swift in Sources */,
 				D18E55FA227BD21D00DC2F72 /* AppDelegate.swift in Sources */,
+				D1C25CF0227CD04A0042D150 /* GodDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VJ48F5GVL;
 				INFOPLIST_FILE = "Baltic Gods/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VJ48F5GVL;
 				INFOPLIST_FILE = "Baltic Gods/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

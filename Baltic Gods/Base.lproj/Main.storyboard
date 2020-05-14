@@ -1,24 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n29-2l-DvE">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Baltic Gods-->
+        <scene sceneID="gOG-aQ-KWn">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="T8o-LN-dlA" customClass="GodsTableViewController" customModule="Baltic_Gods" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1ka-eq-vvl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="balticGodsTableViewCell" textLabel="ff9-ms-KpI" detailTextLabel="sv5-dN-1By" style="IBUITableViewCellStyleSubtitle" id="XOY-A7-wq1">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XOY-A7-wq1" id="unB-GY-XHS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ff9-ms-KpI">
+                                            <rect key="frame" x="20" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sv5-dN-1By">
+                                            <rect key="frame" x="20" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="hHG-V6-NlT" kind="show" id="e3x-dz-OSI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="T8o-LN-dlA" id="ZHI-GT-I4q"/>
+                            <outlet property="delegate" destination="T8o-LN-dlA" id="JCu-SN-X81"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Baltic Gods" id="UFb-3n-pei"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aid-ba-eME" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1671.0144927536232" y="122.54464285714285"/>
+        </scene>
+        <!--God Detail View Controller-->
+        <scene sceneID="vtb-dg-3pA">
+            <objects>
+                <viewController id="hHG-V6-NlT" customClass="GodDetailViewController" customModule="Baltic_Gods" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j21-w0-oVu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Žemyna" translatesAutoresizingMaskIntoConstraints="NO" id="cSL-s6-16T">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="God Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2je-Kr-tB1">
+                                <rect key="frame" x="166.5" y="138" width="227.5" height="54"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="45"/>
+                                <color key="textColor" red="0.98015426289999996" green="1" blue="0.98860776859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHK-o2-ryL">
+                                <rect key="frame" x="114" y="200" width="280" height="30.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" red="0.98015426289999996" green="1" blue="0.98860776859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More Details" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a36-gL-vL7">
+                                <rect key="frame" x="114" y="269.5" width="280" height="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" red="0.98015426289999996" green="1" blue="0.98860776859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a36-gL-vL7" firstAttribute="leading" secondItem="cSL-s6-16T" secondAttribute="trailing" constant="-300" id="7EQ-QY-A8N"/>
+                            <constraint firstItem="2je-Kr-tB1" firstAttribute="top" secondItem="9Io-pr-8yA" secondAttribute="top" constant="50" id="7fn-cn-XsD"/>
+                            <constraint firstItem="2je-Kr-tB1" firstAttribute="leading" secondItem="cSL-s6-16T" secondAttribute="trailing" constant="-247.5" id="I8m-zq-BUy"/>
+                            <constraint firstItem="a36-gL-vL7" firstAttribute="top" secondItem="UHK-o2-ryL" secondAttribute="bottom" constant="39" id="ND1-3x-joa"/>
+                            <constraint firstItem="cSL-s6-16T" firstAttribute="top" secondItem="9Io-pr-8yA" secondAttribute="top" id="UC0-3S-HUq"/>
+                            <constraint firstItem="9Io-pr-8yA" firstAttribute="trailing" secondItem="cSL-s6-16T" secondAttribute="trailing" id="ZxX-6p-DhF"/>
+                            <constraint firstItem="9Io-pr-8yA" firstAttribute="trailing" secondItem="a36-gL-vL7" secondAttribute="trailing" constant="20" id="bRD-FP-cGs"/>
+                            <constraint firstItem="9Io-pr-8yA" firstAttribute="trailing" secondItem="2je-Kr-tB1" secondAttribute="trailing" constant="20" id="ecy-u6-o68"/>
+                            <constraint firstItem="UHK-o2-ryL" firstAttribute="top" secondItem="2je-Kr-tB1" secondAttribute="bottom" constant="8" id="hPF-ba-BfK"/>
+                            <constraint firstItem="cSL-s6-16T" firstAttribute="leading" secondItem="9Io-pr-8yA" secondAttribute="leading" id="kxz-zI-zyZ"/>
+                            <constraint firstAttribute="bottom" secondItem="cSL-s6-16T" secondAttribute="bottom" id="ryA-qu-hcj"/>
+                            <constraint firstItem="9Io-pr-8yA" firstAttribute="trailing" secondItem="UHK-o2-ryL" secondAttribute="trailing" constant="20" id="uzC-tA-2l8"/>
+                            <constraint firstItem="UHK-o2-ryL" firstAttribute="leading" secondItem="cSL-s6-16T" secondAttribute="trailing" constant="-300" id="vcl-YW-R6b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Io-pr-8yA"/>
+                    </view>
+                    <connections>
+                        <outlet property="godDetailLabel" destination="UHK-o2-ryL" id="bdb-sC-KHN"/>
+                        <outlet property="godMoreDetailLabel" destination="a36-gL-vL7" id="TFY-fI-edT"/>
+                        <outlet property="godNameLabel" destination="2je-Kr-tB1" id="2dy-lj-cey"/>
+                        <outlet property="godPicture" destination="cSL-s6-16T" id="V67-4i-hn6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GKP-TE-QcP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2328.985507246377" y="122.54464285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XRi-IZ-Z1e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n29-2l-DvE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qm9-K4-HZ3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="T8o-LN-dlA" kind="relationship" relationship="rootViewController" id="gyu-Tm-4jG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKA-dv-Swq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.86956521739137" y="122.54464285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Žemyna" width="1920" height="2742.5"/>
+    </resources>
 </document>
